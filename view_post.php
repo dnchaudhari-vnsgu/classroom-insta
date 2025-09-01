@@ -14,8 +14,8 @@ $result = $conn->query($sql);
 echo "<h2>Post</h2>";
 echo "<table border='1' width='100%'>";
 while ($row = $result->fetch_assoc()) {
-    
-    echo "<tr><td><b>{$row['username']}</b> : {$row['content']}</td></tr>";
+    $pic = $row['profile_pic'] ? "<img src='{$row['profile_pic']}' width='30'>" : "";
+    echo "<tr><td>$pic : {$row['content']}</td></tr>";
 }
 echo "</table>";
 echo "<br><br><textarea id='comment' placeholder='comment here'> </textarea> <br><button>Add comment</button>"; 
