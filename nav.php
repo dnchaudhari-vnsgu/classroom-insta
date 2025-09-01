@@ -9,6 +9,7 @@ echo '<table border="1" width="100%">
 <td><a href="index.php">Home</a></td>
 <td><a href="profile.php?user_id='.$_SESSION['user_id'].'">My Profile</a></td>
 <td><a href="post.php">New Post</a></td>
+<td><a href="list_users.php">Explore</a></td>
 <td><a href="logout.php">Logout</a></td>
 </tr>
 </table>';
