@@ -14,4 +14,5 @@ while ($row = $result->fetch_assoc()) {
     echo "<tr><td> {$row['content']}</td></tr>";
 }
 echo "</table>";
+echo "<br><br><textarea id='comment' placeholder='comment here'> </textarea> <br><button>Add comment</button>"; 
 ?>
